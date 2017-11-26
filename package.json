@@ -1,23 +1,23 @@
 {
-  "name": "simple-babel-webpack-template",
-  "version": "1.0.0",
+  "name": "nforget-api",
+  "version": "0.1.0",
   "description": "",
-  "main": "src/application.js",
+  "main": "src/index.js",
   "scripts": {
     "clean": "rimraf dist/built",
     "build": "npm run clean && webpack --config webpack/production.config.js",
     "devserver": "webpack-dev-server --port 3000 --config webpack/development.config.js --progress --colors --hot --content-base dist"
   },
-  "author": "Paul Kögel",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulkogel/simple-babel-webpack-template/"
+    "url": "git+https://github.com/carlosturnerbenites/nforget-api-client"
   },
-  "license": "ISC",
-  "engines": {
-    "node": ">= 5.0.0",
-    "npm": ">= 3.3.6"
-  },
+  "keywords": [
+    "nforget",
+    "api"
+  ],
+  "author": "Carlos Alonso Turner Benites",
+  "license": "MIT",
   "devDependencies": {
     "babel": "^6.0.15",
     "babel-cli": "^6.4.0",
@@ -34,5 +34,9 @@
     "firebase": "^4.5.1",
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
+  },
+  "engines": {
+    "node": "8.6.0",
+    "npm": ">= 5.2.9"
   }
 }
